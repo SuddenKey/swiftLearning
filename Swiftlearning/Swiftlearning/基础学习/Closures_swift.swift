@@ -9,10 +9,20 @@
 import UIKit
 import Foundation
 
-
+public  typealias   x = (_ send:Int)-> Void
 
 class Closures_swift: NSObject {
+    func backwards(s1: String, s2: String) -> Bool {
+        return s1 > s2
+    }
     
+    func newClosures(clo:@escaping x) {
+        var names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+        names.sort { (x, y) -> Bool in
+            return true
+        }
+        print(names)
+    }
 }
 
 //闭包的格式
@@ -85,5 +95,4 @@ func makeIncrementByTen() {
     print(incrementByTen())
     print(otherIncrementByTen())
 }
-
 

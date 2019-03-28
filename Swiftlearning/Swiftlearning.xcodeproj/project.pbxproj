@@ -24,6 +24,9 @@
 		BDA2F3A3215DC96F007C5F39 /* emum_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F3A2215DC96F007C5F39 /* emum_swift.swift */; };
 		BDA2F3A5215E0475007C5F39 /* struct_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F3A4215E0475007C5F39 /* struct_swift.swift */; };
 		BDA2F3A7215E18E9007C5F39 /* class_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA2F3A6215E18E9007C5F39 /* class_swift.swift */; };
+		BDD1C1F3224C71390095971B /* TransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1C1F2224C71390095971B /* TransitionCoordinator.swift */; };
+		BDD1C1F6224C75EA0095971B /* TwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1C1F5224C75EA0095971B /* TwoVC.swift */; };
+		BDD1C1F8224C79770095971B /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1C1F7224C79770095971B /* CircularTransition.swift */; };
 		BDE751F9216DE81F00FB34A5 /* TypeChange_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE751F8216DE81F00FB34A5 /* TypeChange_swift.swift */; };
 		BDE751FB216DEE4F00FB34A5 /* Extension_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE751FA216DEE4F00FB34A5 /* Extension_swift.swift */; };
 		BDE751FD216DEECE00FB34A5 /* Protocol_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE751FC216DEECE00FB34A5 /* Protocol_swift.swift */; };
@@ -70,6 +73,9 @@
 		BDA2F3A2215DC96F007C5F39 /* emum_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emum_swift.swift; sourceTree = "<group>"; };
 		BDA2F3A4215E0475007C5F39 /* struct_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = struct_swift.swift; sourceTree = "<group>"; };
 		BDA2F3A6215E18E9007C5F39 /* class_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = class_swift.swift; sourceTree = "<group>"; };
+		BDD1C1F2224C71390095971B /* TransitionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionCoordinator.swift; sourceTree = "<group>"; };
+		BDD1C1F5224C75EA0095971B /* TwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwoVC.swift; path = ../TwoVC.swift; sourceTree = "<group>"; };
+		BDD1C1F7224C79770095971B /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		BDE751F8216DE81F00FB34A5 /* TypeChange_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeChange_swift.swift; sourceTree = "<group>"; };
 		BDE751FA216DEE4F00FB34A5 /* Extension_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_swift.swift; sourceTree = "<group>"; };
 		BDE751FC216DEECE00FB34A5 /* Protocol_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol_swift.swift; sourceTree = "<group>"; };
@@ -124,20 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				BD4DC9EF211BD28600FB3BAD /* ViewController.swift */,
-				BDE751FA216DEE4F00FB34A5 /* Extension_swift.swift */,
-				BD59FB632170777E00333847 /* Generic_swift.swift */,
-				BDE751FC216DEECE00FB34A5 /* Protocol_swift.swift */,
-				BD75F164216C78280098586F /* chain_swift.swift */,
-				BD75F166216C9D090098586F /* ARC_Swift.swift */,
-				BDE751F8216DE81F00FB34A5 /* TypeChange_swift.swift */,
-				BD75F162216AF8F60098586F /* init_swift.swift */,
-				BDA2F39E215C7C73007C5F39 /* func_swift.swift */,
-				BD75F160216AE8760098586F /* JiCheng_swift.swift */,
-				BDA2F3A0215CC8EA007C5F39 /* Closures_swift.swift */,
-				BDA2F3A2215DC96F007C5F39 /* emum_swift.swift */,
-				BDA2F3A4215E0475007C5F39 /* struct_swift.swift */,
-				BDA2F3A6215E18E9007C5F39 /* class_swift.swift */,
 				BD4DC9ED211BD28600FB3BAD /* AppDelegate.swift */,
+				BDD1C1F1224C710A0095971B /* 基础学习 */,
+				BDD1C1F0224C70FB0095971B /* 转场动画 */,
 				BD4DC9F1211BD28600FB3BAD /* Main.storyboard */,
 				BD4DC9F4211BD28B00FB3BAD /* Assets.xcassets */,
 				BD4DC9F6211BD28B00FB3BAD /* LaunchScreen.storyboard */,
@@ -162,6 +157,36 @@
 				BD4DCA0F211BD28C00FB3BAD /* Info.plist */,
 			);
 			path = SwiftlearningUITests;
+			sourceTree = "<group>";
+		};
+		BDD1C1F0224C70FB0095971B /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				BDD1C1F5224C75EA0095971B /* TwoVC.swift */,
+				BDD1C1F2224C71390095971B /* TransitionCoordinator.swift */,
+				BDD1C1F7224C79770095971B /* CircularTransition.swift */,
+			);
+			path = "转场动画";
+			sourceTree = "<group>";
+		};
+		BDD1C1F1224C710A0095971B /* 基础学习 */ = {
+			isa = PBXGroup;
+			children = (
+				BDE751FA216DEE4F00FB34A5 /* Extension_swift.swift */,
+				BD59FB632170777E00333847 /* Generic_swift.swift */,
+				BDE751FC216DEECE00FB34A5 /* Protocol_swift.swift */,
+				BD75F164216C78280098586F /* chain_swift.swift */,
+				BD75F166216C9D090098586F /* ARC_Swift.swift */,
+				BDE751F8216DE81F00FB34A5 /* TypeChange_swift.swift */,
+				BD75F162216AF8F60098586F /* init_swift.swift */,
+				BDA2F39E215C7C73007C5F39 /* func_swift.swift */,
+				BD75F160216AE8760098586F /* JiCheng_swift.swift */,
+				BDA2F3A0215CC8EA007C5F39 /* Closures_swift.swift */,
+				BDA2F3A2215DC96F007C5F39 /* emum_swift.swift */,
+				BDA2F3A4215E0475007C5F39 /* struct_swift.swift */,
+				BDA2F3A6215E18E9007C5F39 /* class_swift.swift */,
+			);
+			path = "基础学习";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,12 +328,15 @@
 				BDE751FB216DEE4F00FB34A5 /* Extension_swift.swift in Sources */,
 				BDA2F3A3215DC96F007C5F39 /* emum_swift.swift in Sources */,
 				BD59FB642170777E00333847 /* Generic_swift.swift in Sources */,
+				BDD1C1F3224C71390095971B /* TransitionCoordinator.swift in Sources */,
 				BD75F161216AE8760098586F /* JiCheng_swift.swift in Sources */,
 				BD75F163216AF8F60098586F /* init_swift.swift in Sources */,
 				BDA2F39F215C7C73007C5F39 /* func_swift.swift in Sources */,
 				BDA2F3A5215E0475007C5F39 /* struct_swift.swift in Sources */,
 				BD4DC9F0211BD28600FB3BAD /* ViewController.swift in Sources */,
 				BD75F167216C9D090098586F /* ARC_Swift.swift in Sources */,
+				BDD1C1F6224C75EA0095971B /* TwoVC.swift in Sources */,
+				BDD1C1F8224C79770095971B /* CircularTransition.swift in Sources */,
 				BD75F165216C78280098586F /* chain_swift.swift in Sources */,
 				BDE751F9216DE81F00FB34A5 /* TypeChange_swift.swift in Sources */,
 				BD4DC9EE211BD28600FB3BAD /* AppDelegate.swift in Sources */,

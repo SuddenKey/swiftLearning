@@ -11,10 +11,27 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate{
     
+    let transitionCoordinatorDelegate = TransitionCoordinator.init()
+    
+    @IBOutlet weak var clickBtn: UIButton!
+    var baseLabel:UIView!
+    
+
+    @objc func btnClick() {
+        let vc = TwoVC()
+        self.transitionCoordinatorDelegate.animationWith(fromVC: self, toView: vc, clickView: self.baseLabel, frame: self.baseLabel.frame) { (result) in
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.clickBtn.addTarget(self, action: #selector(btnClick), for: UIControl.Event.touchUpInside)
+        
+        self.baseLabel = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
+        self.baseLabel.backgroundColor = UIColor.blue
+        self.baseLabel.center = self.view.center
+        self.view.addSubview(self.baseLabel)
 //        addTableView()
 //        setUpSubView()
 //        arrayBase()
@@ -52,7 +69,14 @@ class ViewController: UIViewController {
 //        chain_base()
 //        ARC_Base()
 //        Protocol_Base()
-        Generic_Base()
+//        Generic_Base()
+        
+//        Closures_swift.init().newClosures(clo: <#(Int) -> Void#>)
+//        let clo = Closures_swift()
+    }
+    
+    func setPool() {
+        
     }
     
     func fun_allfun() {
